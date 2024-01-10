@@ -1,5 +1,6 @@
 const express = require("express")
 const {config} = require("dotenv")
+const allBookRoutes = require("./routes/book")
 
 const app = express()
 
@@ -8,11 +9,6 @@ config({
 })
 
 
-app.get('/', (req, res) => {
-    res.json({
-        success : true,
-        message : "Server is working"
-    })
-})
+app.use('/api/v1/book', allBookRoutes)
 
 module.exports = app
