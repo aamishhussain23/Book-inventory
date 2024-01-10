@@ -7,6 +7,7 @@ const userSchema = new mongoose.Schema({
     },
     email : {
         type : String,
+        unique : true,
         required : true
     },
     password : {
@@ -24,6 +25,6 @@ const userSchema = new mongoose.Schema({
     }
 })
 
-const userCollection = new mongoose.model('userCollection', userSchema)
+const bookUserCollection = new mongoose.model('bookUserCollection', userSchema)
 
-module.exports = userCollection
+module.exports = bookUserCollection

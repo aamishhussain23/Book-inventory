@@ -1,7 +1,7 @@
 const checkRoute = (req, res) => {
     res.json({
         success : true,
-        message : "Server is working"
+        message : "book route is working"
     })
 }
 
