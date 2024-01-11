@@ -73,3 +73,47 @@ Testing: Thorough unit test coverage for endpoints and validation.
 Timeline:
 
 Provide an estimated timeline for completing the task, considering the complexity of the requirements.
+
+
+
+
+
+=================================================================================
+For register
+{
+    "name" : "Aamish",
+    "email" : "aamish1@gmail.com",
+    "password" : "123"
+}
+
+For Login
+{
+    "email" : "aamish1@gmail.com",
+    "password" : "123"
+}
+
+
+For book
+
+{
+    "title":"Programming World",
+    "author":"Aamish Hussain",
+    "isbn":"978-3-16-148410-0",
+    "genre":"Fiction",
+    "publicationYear":2022,
+    "price" : 200,
+    "quantity" : 50,
+    "description":"This is a great book"
+}
+
+
+{
+    "title": "Hello World",
+    "author": "George bush",
+    "isbn": "978-0-13-213080-6",
+    "genre": "programming",
+    "publicationYear": 2022,
+    "price": 150,
+    "quantity": 25,
+    "description": "This is a great book to start learning programming"
+}
