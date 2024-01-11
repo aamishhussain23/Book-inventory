@@ -1,0 +1,75 @@
+Hi Aamish,
+
+This is a sample assignment and part of the selection process. Please complete this and get back to us-
+
+Project: Building a .NET API for a Bookstore
+
+Objective:
+Create a .NET Web API for managing a bookstore's inventory. The API will handle CRUD operations (Create, Read, Update, Delete) for books, allowing users to retrieve book details, add new books, update book information, and remove books from the inventory.
+
+Requirements:
+
+Authentication and Authorization:
+Implement authentication using JWT (JSON Web Tokens) for secure access to the API endpoints.
+Define roles (Admin, User) and restrict certain endpoints based on user roles (Admin-only actions).
+
+Book Management Endpoints:
+Create an endpoint to retrieve a list of all books in the inventory.
+Implement an endpoint to get details of a specific book by its ID.
+Develop an endpoint to add a new book to the inventory.
+Implement an endpoint to update the details of an existing book.
+Create an endpoint to delete a book from the inventory.
+
+Book Model:
+Define a Book model with the following attributes:
+Title
+Author(s)
+ISBN
+Genre
+Publication Year
+Price
+Quantity (Number of available copies)
+Description
+
+Validation and Error Handling:
+Implement validation for input data (e.g., required fields, valid ISBN format, numeric ranges).
+Ensure appropriate error messages are returned for validation failures or any other errors.
+
+Unit Testing:
+Write unit tests to ensure the functionality of API endpoints, covering positive and negative scenarios.
+Use testing frameworks like NUnit or MSTest for unit testing.
+
+Documentation:
+Provide clear documentation (using Swagger/OpenAPI) for all API endpoints, including their input parameters, expected responses, and authentication requirements.
+
+Technology Stack:
+Utilize .NET Core/.NET 5+ for building the API.
+Use Entity Framework Core for database operations (SQLite or SQL Server).
+Implement Swagger/OpenAPI for API documentation.
+Employ best practices for code quality, including SOLID principles and proper error handling.
+
+Deployment:
+Deploy the API to a cloud service (Azure, AWS, etc.) or host it on a platform like Heroku.
+
+Deliverables:
+
+Source code of the API with detailed comments.
+Unit tests for all endpoints.
+API documentation using Swagger/OpenAPI.
+
+Additional Notes:
+
+Follow RESTful API design principles for endpoint URLs and HTTP methods.
+Use meaningful status codes for HTTP responses (e.g., 200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 404 Not Found).
+Ensure that the API is secure, efficient, and scalable.
+
+Evaluation Criteria:
+
+Functionality: All CRUD operations work as expected.
+Code Quality: Adherence to best practices, clean code, and proper error handling.
+Documentation: Clear and comprehensive API documentation.
+Testing: Thorough unit test coverage for endpoints and validation.
+
+Timeline:
+
+Provide an estimated timeline for completing the task, considering the complexity of the requirements.
