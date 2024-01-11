@@ -73,6 +73,7 @@ const addBook = async (req, res, next) => {
             message : 'Book added successfully'
         })
     } catch (error) {
+        if(error.code === 11000) next(new ErrorHandler('Duplicate ISBN is not allowed', 409))
         next(new ErrorHandler(error.message, 500))
     }
 }
@@ -105,6 +106,7 @@ const updateBook = async (req, res, next) => {
         });
     }
     catch(error){
+        if(error.code === 11000) next(new ErrorHandler('Duplicate ISBN is not allowed', 409))
         next(new ErrorHandler(error.message, 500))
     }
 
