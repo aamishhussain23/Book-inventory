@@ -4,6 +4,7 @@ const allBookRoutes = require("./routes/book")
 const allUserRoutes = require("./routes/user")
 const {errorMiddleware} = require('./middlewares/error')
 const cookieParser = require('cookie-parser')
+const cors = require('cors')
 
 const app = express()
 
@@ -13,6 +14,11 @@ config({
 
 app.use(express.json())
 app.use(cookieParser())
+app.use(cors({
+    origin : [process.env.FRONTEND_URL, process.env.FRONTEND_URL_2],
+    methods : ["GET", "POST", "PUT", "DELETE"],
+    credentials : true
+}))
 app.use('/api/v1/book', allBookRoutes)
 app.use('/api/v1/user', allUserRoutes)
 
