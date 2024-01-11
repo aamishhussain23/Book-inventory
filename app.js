@@ -19,6 +19,37 @@ app.use(cors({
     methods : ["GET", "POST", "PUT", "DELETE"],
     credentials : true
 }))
+
+app.get('/', (req, res) => {
+    res.json({
+        success: true,
+        apiInfo: [
+            {
+                category: "Books",
+                description: "APIs related to books",
+                server: "https://aamish-hussain-book-inventory.onrender.com/api/v1/book",
+                endpoints: {
+                    getAllBooks: "server/allBooks",
+                    getSpecificBook: "server/getSpecificBook/:id",
+                    addBook: "server/add-book",
+                    updateBook: "server/update-book/:id",
+                    deleteBook: "server/api/v1/delete-book/:id"
+                }
+            },
+            {
+                category: "Users",
+                description: "APIs related to users",
+                server: "https://aamish-hussain-book-inventory.onrender.com/api/v1/user",
+                endpoints: {
+                    register: "server/register",
+                    login: "server/login",
+                    logout: "server/logout",
+                }
+            }
+        ]
+    });
+});
+
 app.use('/api/v1/book', allBookRoutes)
 app.use('/api/v1/user', allUserRoutes)
 
