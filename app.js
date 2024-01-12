@@ -24,6 +24,13 @@ app.use(
   })
 );
 
+app.get('/', () => {
+    res.json({
+        success : true,
+        message : "Api is working fine"
+    })
+})
+
 // Serving Swagger UI
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
