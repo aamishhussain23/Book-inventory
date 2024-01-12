@@ -24,7 +24,7 @@ app.use(
   })
 );
 
-app.get('/', () => {
+app.get('/', (req,res) => {
     res.json({
         success : true,
         message : "Api is working fine"
